@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@color/background_white">
+
+    <Button
+        android:id="@+id/Sharing_knowledge"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Chia sẻ kiến thức"
+        android:textColor="@color/primary_blue"
+        android:gravity="start"
+        android:paddingStart="25dp"
+        android:backgroundTint="@color/background_white"
+        android:textSize="18sp"
+        android:padding="12dp" />
+
+    <Button
+        android:id="@+id/home_work_support"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Hỏi bài tập"
+        android:backgroundTint="@color/background_white"
+        android:textColor="@color/primary_blue"
+        android:gravity="start"
+        android:paddingStart="25dp"
+        android:textSize="18sp"
+        android:padding="12dp" />
+
+</LinearLayout>

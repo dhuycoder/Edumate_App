@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/category"
+    android:orientation="vertical">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <!---->
+        <TextView
+            android:id="@+id/tv_header"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_marginTop="5dp"
+            android:text="Cộng Đồng"
+            android:gravity="center"
+            android:layout_alignParentTop="true"
+            android:textColor="@color/lighter_blue"
+            android:textStyle="bold"
+            android:textSize="28dp"
+            android:layout_marginStart="15dp"
+            />
+
+        <ImageButton
+            android:id="@+id/btn_search"
+            android:layout_width="38dp"
+            android:layout_height="38dp"
+            android:layout_toStartOf="@+id/btn_profile"
+            android:layout_marginStart="125dp"
+            android:layout_marginTop="7dp"
+            android:layout_marginRight="5dp"
+            android:layout_toEndOf="@+id/tv_header"
+            android:background="@drawable/search_icon"
+            android:visibility="gone"
+            app:backgroundTint="@null"/>
+        <ImageButton
+            android:id="@+id/btn_profile"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="10dp"
+            android:layout_alignParentEnd="true"
+            android:background="@drawable/ic_profile"
+            app:backgroundTint="@null"
+            android:scaleType="centerCrop"
+            />
+        <ImageButton
+            android:id="@+id/btn_notify"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentEnd="true"
+            android:background="@drawable/ic_bell"
+            app:backgroundTint="@null"
+            android:layout_marginHorizontal="5dp"
+            android:layout_marginTop="6dp"
+            android:scaleType="centerCrop"
+            android:visibility="gone"
+            />
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp">
+
+        <com.google.android.material.tabs.TabLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tab_layout"
+            android:background="@color/background_white"
+            app:tabTextColor="@color/lighter_blue"
+            app:tabSelectedTextColor="@color/primary_blue"
+            app:tabIndicatorColor="@color/primary_blue"
+            >
+            <com.google.android.material.tabs.TabItem
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Chia sẻ kiến thức"/>
+            <com.google.android.material.tabs.TabItem
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Hỏi đáp bài tập"/>
+
+        </com.google.android.material.tabs.TabLayout>
+
+        <androidx.viewpager2.widget.ViewPager2
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/view_pager"
+            android:layout_below="@id/tab_layout">
+        </androidx.viewpager2.widget.ViewPager2>
+
+
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="680dp"
+            android:backgroundTint="@color/background_white">
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/btn_create_post"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|end"
+                android:layout_margin="16dp"
+                android:contentDescription="Create post"
+                android:src="@drawable/ic_write"
+                app:tint="@color/primary_blue"
+                app:backgroundTint="@color/background_white"
+                app:fabSize="auto" />
+        </FrameLayout>
+
+
+    </RelativeLayout>
+
+
+</LinearLayout>

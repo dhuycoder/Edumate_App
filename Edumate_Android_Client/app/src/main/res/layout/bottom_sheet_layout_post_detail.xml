@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@color/background_white"
+    android:elevation="8dp"
+
+    >
+
+<Button
+android:id="@+id/btnEdit"
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:text="Tùy Chỉnh"
+    android:textSize="20sp"
+    android:background="@drawable/rounded_border_button"
+    android:elevation="8dp"
+    android:outlineProvider="background"
+    android:textColor="@color/lighter_blue"
+    />
+
+<Button
+android:id="@+id/btnDelete"
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+    android:layout_marginTop="10dp"
+android:text="Xóa"
+    android:textSize="20sp"
+    android:background="@drawable/rounded_border_button"
+    android:elevation="8dp"
+
+    android:textColor="@color/lighter_blue"
+    />
+
+<Button
+android:id="@+id/btnCancel"
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:text="Hủy"
+    android:textSize="20sp"
+    android:layout_marginTop="10dp"
+    android:background="@drawable/rounded_border_button"
+    android:elevation="8dp"
+    android:outlineProvider="background"
+    android:textColor="@color/lighter_blue"/>
+    </LinearLayout>

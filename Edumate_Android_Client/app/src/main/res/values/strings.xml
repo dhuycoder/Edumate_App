@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">EDUMATE</string>
+    <string name="web_client">382236610768-7luhukl4gl2vvg307bds2bqbs7eg7snv.apps.googleusercontent.com</string>
+    <string name="facebook_app_id">2928192314047775</string>
+    <string name="fb_login_protocol_scheme">fb2928192314047775</string>
+    <string name="facebook_client_token">0c74d69f8829801be4062f2a1b62ffdd</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="policy"> Băng việc đăng nhập bạn đồng ý chấp nhận các <a href="https://www.freeprivacypolicy.com/live/b93057c6-82a7-47b7-9af7-5e5ca3870108">điều khoản</a> của chúng tôi</string>
+    <string name="baseUrl">http://10.0.2.2:8080</string>
+
+    <string name="close">Đóng</string>
+    <string name="add">Thêm</string>
+    <string name="search">Tìm kiếm</string>
+    <string name="ai_solver">Hỏi A.I</string>
+    <string name="ask_question">Tìm kiếm câu hỏi tương tự</string>
+    <string name="ask_ai">Đặt câu hỏi cho A.I về mọi môn học!</string>
+    <string name="solve_exercise">Chụp bài tập để giải ngay!</string>
+    <string name="search_with_sample">Tìm kiếm với câu hỏi mẫu</string>
+    <string name="gallery">Thư viện ảnh</string>
+    <string name="capture">Chụp ảnh</string>
+    <string name="camera_permission_required">Cần quyền truy cập camera để sử dụng tính năng này</string>
+    <string name="camera_error">Lỗi khi khởi tạo camera</string>
+    <string name="processing">Đang xử lý…</string>
+    <string name="account_status_normal">Bình thường</string>
+    <string name="account_status_warning_low">Cảnh báo mức 1</string>
+    <string name="account_status_warning_medium">Cảnh báo mức 2</string>
+    <string name="account_status_warning_high">Cảnh báo mức 3</string>
+</resources>

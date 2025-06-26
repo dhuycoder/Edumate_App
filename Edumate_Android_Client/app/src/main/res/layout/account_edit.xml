@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_white"
+    android:visibility="visible"
+    >
+        <LinearLayout
+            android:id="@+id/linearLayoutAccountEdit"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="24dp"
+            android:backgroundTint="@color/background_white"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:visibility="visible"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/header_layout"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@android:color/transparent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <Button
+                    android:id="@+id/btn_back_create_post"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:background="@android:color/transparent"
+                    android:textColor="@color/primary_blue"
+                    android:textSize="16sp"
+                    app:layout_constraintHorizontal_bias="0"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/tv_tag_type_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="Hồ Sơ Cá Nhân"
+                    android:textColor="@color/primary_blue"
+                    android:textSize="18sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="@id/btn_back_create_post"
+                    tools:layout_editor_absoluteX="0dp"
+                    tools:layout_editor_absoluteY="16dp" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <FrameLayout
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_gravity="center"
+                android:layout_marginBottom="24dp">
+
+                <ImageView
+                    android:id="@+id/imgAvatarAccount"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:contentDescription="Avatar"
+                    android:scaleType="centerCrop"
+                    android:background="@drawable/oval"
+                    android:clipToOutline="true"
+                    />
+
+                <Button
+                    android:id="@+id/btnChangeAvatar"
+                    android:layout_width="match_parent"
+                    android:layout_height="42dp"
+                    android:layout_gravity="bottom"
+                    android:background="@drawable/oval"
+                    android:clipToOutline="true" android:gravity="center"
+                    android:text="Thay Đổi"
+                    android:textColor="#FFFFFF"
+                    android:paddingBottom="5dp" app:backgroundTint="@null" />
+            </FrameLayout>
+
+            <!-- Username -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Tên Người Dùng"
+                android:textColor="@color/lighter_blue"
+                android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/edtUsernameAccount"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginVertical="15dp"
+                    android:hint="Tên Người Dùng"
+                    android:background="@drawable/drawable_input_text"
+                    android:inputType="textPersonName"/>
+
+
+
+            <Button
+                android:id="@+id/btnEditUser"
+                android:layout_width="match_parent"
+                android:layout_height="42dp"
+                android:layout_gravity="bottom"
+                android:background="@drawable/confirm_button"
+                android:gravity="center"
+                android:text="Lưu Thay Đổi"
+                android:textColor="#FFFFFF"
+                app:backgroundTint="@null" />
+
+            <!-- Account Information -->
+            <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="16dp"
+                android:paddingVertical="16dp"
+                android:background="@drawable/popup_background"
+                android:paddingHorizontal="16dp">
+
+                <TextView
+                    android:id="@+id/tvTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Thông Tin Tài Khoản"
+                    android:textColor="@color/primary_blue"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent" />
+
+                <TextView
+                    android:id="@+id/tvAccountStatusLabel"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Trạng Thái Tài Khoản"
+                    android:textColor="@color/lighter_blue"
+                    android:textStyle="bold"
+                    android:layout_marginTop="16dp"
+                    app:layout_constraintTop_toBottomOf="@id/tvTitle"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent" />
+
+                <TextView
+                    android:id="@+id/tvAccountStatus"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="16dp"
+                    android:background="@drawable/bg_status_tag"
+                    android:backgroundTint="@color/transparent"
+                    android:text="DELETED"
+                    android:textSize="14sp"
+                    app:layout_constraintTop_toBottomOf="@id/tvAccountStatusLabel"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0" />
+                <TextView
+                android:id="@+id/tvAuthMethodLabel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Liên Kết Với:"
+                android:textColor="@color/lighter_blue"
+                android:textStyle="bold"
+                    android:paddingTop="5dp"
+                app:layout_constraintTop_toBottomOf="@id/tvAccountStatus"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent" />
+
+                <TextView
+                    android:id="@+id/tvAuthMethodAccount"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="16dp"
+                    android:text="Facebook"
+                    app:layout_constraintTop_toBottomOf="@id/tvAuthMethodLabel"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent" />
+
+                <TextView
+                    android:id="@+id/tvEmailLabel"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Email"
+                    android:paddingTop="5dp"
+                    android:textColor="@color/lighter_blue"
+                    android:textStyle="bold"
+                    app:layout_constraintTop_toBottomOf="@id/tvAuthMethodAccount"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent" />
+
+                <TextView
+                    android:id="@+id/tvEmailAccount"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="16dp"
+                    android:text="lhuy123hl@gmail.com"
+                    app:layout_constraintTop_toBottomOf="@id/tvEmailLabel"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent" />
+
+                <TextView
+                    android:id="@+id/tvUserIdLabel"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Mã Người Dùng"
+                    android:layout_marginTop="5dp"
+                    android:textColor="@color/lighter_blue"
+                    android:textStyle="bold"
+                    app:layout_constraintTop_toBottomOf="@id/tvEmailAccount"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent" />
+
+                <TextView
+                    android:id="@+id/tvUserIdAccount"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="#r8x4v458"
+                    app:layout_constraintTop_toBottomOf="@id/tvUserIdLabel"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+            <Button
+                android:id="@+id/btnLogout"
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Đăng xuất"
+                android:textColor="@color/warning_red"
+                app:layout_constraintStart_toStartOf="parent"
+                android:background="@drawable/drawable_logout"
+                app:backgroundTint="@null" />
+            <Button
+                android:id="@+id/btnDeleteAccount"
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Xóa tài khoản"
+                android:textColor="@color/warning_red"
+                app:layout_constraintStart_toStartOf="parent"
+                android:background="@drawable/drawable_logout"
+                app:backgroundTint="@null" />
+        </LinearLayout>
+</ScrollView>
+    <FrameLayout
+        android:id="@+id/lottieLoading"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        >
+
+        <com.airbnb.lottie.LottieAnimationView
+
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            app:lottie_autoPlay="true"
+            app:lottie_fileName="loading.json"
+            android:layout_gravity="center"
+            app:lottie_loop="true" />
+
+    </FrameLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

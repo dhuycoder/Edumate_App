@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="background_white">#FFF5F9FF</color>
+    <color name="primary_blue">#FF0151FE</color>
+    <color name="grey">#FFB4BDC4</color>"
+    <color name="lighter_blue">#FF3474FE</color>
+    <color name="lightest_blue">#FF6797FE</color>
+    <color name="dark_blue">#FF0141CB</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="warning_red">#CB0000</color>
+    <color name="red_1">#db5a5a</color>
+    <color name="colorPrimary">#FF5722</color>
+    <color name="colorPrimaryDark">#E64A19</color>
+    <color name="colorAccent">#FF5722</color>
+    <color name="textColorPrimary">#FFFFFF</color>
+    <color name="textColorSecondary">#B3FFFFFF</color>
+    <color name="transparent">#00000000</color>
+    <color name="semiTransparentBlack">#80000000</color>
+    <color name="status_normal">#4CAF50</color> <!-- Xanh lá -->
+    <color name="status_warning_low">#FFC107</color> <!-- Vàng nhạt -->
+    <color name="status_warning_medium">#FF9800</color> <!-- Cam -->
+    <color name="status_warning_high">#F44336</color> <!-- Đỏ -->
+</resources>

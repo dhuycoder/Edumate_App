@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.intro.intro1"
+    android:background="@color/background_white">
+
+    <!-- Auto layout, grids, variables, and unit scale are not yet supported -->
+    <Button
+        android:id="@+id/btnSkip3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="4dp"
+        android:backgroundTint="@color/transparent"
+        android:gravity="right|top"
+        android:text="Bỏ qua"
+        android:textColor="@color/primary_blue"
+        android:textSize="20sp"
+        app:backgroundTint="@null"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:layout_width="344dp"
+        android:layout_height="344dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="213dp"
+        android:clipToOutline="true"
+        android:src="@drawable/intro3"
+        />
+
+    <TextView
+        android:id="@+id/online_lear"
+        android:layout_width="175dp"
+        android:layout_height="35dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:textSize="24sp"
+        android:layout_marginTop="565dp"
+        android:text="Học Với AI"
+        android:gravity="center_horizontal|top"
+        />
+    <TextView
+        android:id="@+id/we_provide_"
+        android:layout_width="360dp"
+        android:layout_height="18dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="608dp"
+        android:text="Nhận hướng dẫn và trợ giúp từ trí tuệ nhân tạo"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:gravity="center_horizontal|top"
+        />
+
+    <ImageView
+        android:id="@+id/pagination"
+        android:layout_width="70dp"
+        android:layout_height="10dp"
+        android:layout_marginLeft="34dp"
+        android:layout_marginTop="800dp"
+        android:src="@drawable/pagination3"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnNext3"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:layout_marginTop="775dp"
+        android:layout_marginRight="35dp"
+        android:background="@drawable/confirm_button"
+        android:drawableRight="@drawable/ic_arrow_right"
+        android:drawableTint="@color/white"
+        android:text="Bắt Đầu!"
+        android:textSize="14sp"
+        app:backgroundTint="@null"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

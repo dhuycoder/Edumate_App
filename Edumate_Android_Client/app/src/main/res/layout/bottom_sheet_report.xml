@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    android:padding="10dp">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:layout_marginTop="25dp"
+        >
+        <Button
+            android:id="@+id/btn_report_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:drawableLeft="@drawable/return_arrow"
+            android:background="@android:color/transparent"
+            android:textColor="@color/primary_blue"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tố Cáo Bài Đăng"
+            android:textColor="@color/primary_blue"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:visibility="gone"/>
+    </LinearLayout>
+    <TextView
+        android:text="Tố Cáo Nội Dung"
+        android:textColor="@color/lighter_blue"
+        android:textSize="20sp"
+        android:layout_marginBottom="10dp"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold" />
+
+    <TextView
+        android:text="Nếu bạn tố cáo sai sự thật,
+        \nbạn có thể bị hạn chế sử dụng cộng đồng."
+        android:textColor="#666"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="14sp"
+        android:layout_marginTop="8dp" />
+
+    <!-- List of radio buttons -->
+    <RadioGroup android:id="@+id/report_reason_group"
+        android:layout_marginTop="16dp"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        >
+        <RadioButton
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:buttonTint="@color/lighter_blue"
+            android:text="Ngôn từ xúc phạm (chửi tục, phát ngôn thù ghét, xúc phạm)" />
+        <RadioButton
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:buttonTint="@color/lighter_blue"
+            android:text="Lặp lại nội dung nhiều lần" />
+        <RadioButton
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:buttonTint="@color/lighter_blue"
+            android:text="Hồ sơ không phù hợp (ảnh đại diện, trạng thái, biệt danh)" />
+        <RadioButton
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:buttonTint="@color/lighter_blue"
+            android:text="Nội dung không phù hợp (quảng cáo, spam, khiêu dâm, tin giả, v.v.)" />
+        <RadioButton
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:buttonTint="@color/lighter_blue"
+            android:text="Chia sẻ thông tin cá nhân" />
+        <RadioButton
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:buttonTint="@color/lighter_blue"
+            android:text="Đặt nhiều câu hỏi trong một lần" />
+        <RadioButton
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:buttonTint="@color/lighter_blue"
+            android:text="Bài đăng không đúng chủ đề" />
+        <RadioButton
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:buttonTint="@color/lighter_blue"
+            android:text="Khác" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/btn_report"
+        android:text="Gửi"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/confirm_button"
+        app:backgroundTint="@null"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_gravity="center"
+        android:textColor="@android:color/white" />
+
+</LinearLayout>
